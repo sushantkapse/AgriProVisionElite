@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".comman.News2"
+    android:layout_gravity="center"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:fontFamily="@font/kameron"
+        android:text="News Portal "
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/horizontal_layout_button">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:queryHint="search news "
+                android:layout_gravity="center"
+                android:id="@+id/search_view"/>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="GENERAL"
+                android:id="@+id/b1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="BUSINESS"
+                android:id="@+id/b2"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="SPORTS"
+                android:id="@+id/b3"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="TECHNOLOGY"
+                android:id="@+id/b4"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="HEALTH"
+                android:id="@+id/b5"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="ENTERTAINMENT"
+                android:id="@+id/b6"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="SCIENCE"
+                android:id="@+id/b7"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:indeterminate="true"
+        android:id="@+id/progresss_bar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        />
+
+
+
+</LinearLayout>

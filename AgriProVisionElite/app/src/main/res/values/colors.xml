@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#623FD7</color>
+    <color name="colorPrimaryDark">#833AC7</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="green">#C6E89F</color>
+
+        <color name="purple_200">#FFBB86FC</color>
+        <color name="purple_500">#FF6200EE</color>
+        <color name="purple_700">#FF3700B3</color>
+        <color name="teal_200">#FF03DAC5</color>
+        <color name="teal_700">#FF018786</color>
+    <color name="black_shade_1">#292036</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#80000000</color>
+        <color name="lavender">#8692f7</color>
+
+
+    <array name="dot_on_page_active">
+        <item>#B71C1C</item>
+        <item>#8BC34A</item>
+        <item>#4A148C</item>
+
+    </array>
+
+    <array name="dot_on_page_not_active">
+        <item>#FF5252</item>
+        <item>#CCFF90</item>
+        <item>#E040FB</item>
+    </array>
+
+
+    <color name="bg_mainactivity">#9E5DBE</color>
+    <!-- Screens background color-->
+    <color name="bg_screen1">#16c266</color>
+    <color name="bg_screen2">#90c2bb</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#39d1ba</color>
+    <color name="dot_dark_screen2">#14a895</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#8de7f9</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+
+
+</resources>

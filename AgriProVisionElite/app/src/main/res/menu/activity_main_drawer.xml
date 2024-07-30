@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon_foreground"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/expenses_icon_foreground"
+            android:title="Expenses" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/attendance_icon_foreground"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/feedbackid123"
+            android:icon="@drawable/feed_icon_foreground"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/newsid"
+            android:icon="@drawable/news_icon_foreground"
+            android:title="News" />
+        <item
+        android:id="@+id/whetherid"
+        android:icon="@drawable/wheather_icon_foreground"
+        android:title="Wheather" />
+        <item
+        android:id="@+id/dd"
+        android:icon="@drawable/scan_icon_foreground"
+        android:title="Diesease Detection" />
+
+
+
+    </group>
+</menu>

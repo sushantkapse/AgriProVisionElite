@@ -1,0 +1,219 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:padding="16dp">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        -->
+<!--        />-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="240dp"-->
+<!--        android:id="@+id/linerar_top"-->
+<!--        />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/top_background"
+        android:orientation="vertical"
+        tools:ignore="Orientation" />
+    <!--        android:background="@drawable/top_background"-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AgriProvision"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:id="@+id/Agri_title"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        app:cardCornerRadius="15dp"
+        android:layout_below="@id/Agri_title"
+        android:id="@+id/logo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        >
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+       android:layout_marginTop="40dp"
+        android:id="@+id/card_add_crop"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="15dp"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_layout_container"
+            android:layout_width="356dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/Agri_title"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+
+            >
+
+
+            <EditText
+                android:id="@+id/editTextCropName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input_text_field_background"
+                android:hint="Crop Name"
+
+                android:padding="12dp"
+
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:id="@+id/editTextSowingDate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextCropName"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input_text_field_background"
+                android:hint="Sowing Date"
+                android:padding="12dp"
+
+
+                android:textAlignment="center" />
+
+
+
+            <EditText
+                android:id="@+id/editTextArea"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextSowingDate"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input_text_field_background"
+                android:hint="Area"
+                android:padding="12dp"
+
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editTextDuration"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextArea"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input_text_field_background"
+                android:hint="Duration"
+                android:padding="12dp"
+
+                android:textAlignment="center" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons"
+        android:layout_below="@+id/card_add_crop"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/buttonAddCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_add_crop"
+
+        android:backgroundTint="@color/orange"
+
+
+        android:text="Add Crop"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/buttonViewCrops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonAddCrop"
+
+            android:backgroundTint="@color/orange"
+
+            android:text="View Crops"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

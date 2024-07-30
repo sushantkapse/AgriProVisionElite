@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.agriprovisionelite.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.agriprovisionelite.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.agriprovisionelite.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/news2"
+        android:name="com.example.agriprovisionelite.comman.News2"
+        android:label="activity_news2"
+        tools:layout="@layout/activity_news2" />
+    <!--    <activity-->
+<!--        android:id="@+id/feedbackid123"-->
+<!--        android:name="com.example.agriprovisionelite.ui.news_nav.NavTesting"-->
+<!--        android:label="activity_feedback"-->
+<!--        tools:layout="@layout/activity_feedback"/>-->
+<!--    <activity-->
+<!--        android:id="@+id/newsid"-->
+<!--        android:name="com.example.agriprovisionelite.ui.Attendance.AttendaceHome"-->
+<!--        android:label="activity_attendace_home"-->
+<!--        tools:layout="@layout/activity_attendace_home" />-->
+</navigation>

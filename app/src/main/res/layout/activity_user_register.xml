@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Farmer.UserRegister"
+    android:orientation="vertical"
+
+
+    >
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="360dp"
+                android:layout_height="148dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/farmer_regi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="सुवर्णरौप्यमाणिक्यवसनैरपि पुरिताः।
+                तथापि प्रार्थयन्त्येव कृषकान् भक्ततृष्णया॥"
+                android:fontFamily="sans-serif-light"
+                android:shadowColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/FEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Fmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                android:hint="@string/form_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/FPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                android:hint="re Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/FRepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="adress">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/shopname3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:ems="10" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adhar number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/FAdhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="shop Adress">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/shopAdd3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:ems="10" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:text="select state"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/select_state" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:text="select district"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/dist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/select_district" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:text="select taluka"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/tal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/select_taluka" />
+
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/btn_round"
+                android:text="Sign Up" />
+
+            <TextView
+                android:id="@+id/already_signinbtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="@string/already_member"/>
+            <!--            <Button-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:id="@+id/test12"-->
+            <!--                android:text="service"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/top_gradient"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

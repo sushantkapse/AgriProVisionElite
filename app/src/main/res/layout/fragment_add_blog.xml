@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Krishi_Officer.fragments.AddBlog">
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:text="BLOGS"
+                android:shadowColor="@color/black"
+                android:textColorHighlight="@color/black"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Title"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/blogtileId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/blogdesId"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textMultiLine"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Author Name "
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/author_nameId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textLongMessage"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Pick Image"
+                android:gravity="center"
+
+                />
+
+            <ImageView
+                android:id="@+id/BlogImageId"
+                android:layout_width="wrap_content"
+                android:layout_height="91dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:src="@drawable/imagepick_foreground"
+                android:text="Upload Image"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                  />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/BlogsubmitId"
+                android:layout_marginTop="50dp"
+                android:padding="12dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

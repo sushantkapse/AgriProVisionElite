@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.dev.cromer.jason.coverme.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:logo="@drawable/applogo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgriProVisionElite"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.news_nav.NavTesting"
+            android:exported="false" />
+        <activity
+            android:name=".intro.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Attendance.CheckAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".Attendance.MarkAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".adminDrawer"
+            android:exported="false"
+            android:label="@string/title_activity_admin_drawer"
+            android:theme="@style/Theme.AgriProVisionElite.NoActionBar" />
+        <activity
+            android:name=".Farmer.Video_calling"
+            android:exported="false" />
+        <activity
+            android:name=".Attendance.AttendaceHome"
+            android:exported="false" />
+        <activity
+            android:name=".comman.Wheather"
+            android:exported="false" />
+        <activity
+            android:name=".comman.PlantDisease"
+            android:exported="false" />
+        <activity
+            android:name=".testing.chatTesting"
+            android:exported="false" />
+        <activity
+            android:name=".testing.imageTesting"
+            android:exported="false" />
+        <activity
+            android:name=".comman.FullNewsWeb"
+            android:exported="false" />
+        <activity
+            android:name=".comman.News2"
+            android:exported="false" />
+        <activity
+            android:name=".Farmer.Farmer_DashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".comman.feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Krishi_Officer.Officer_DashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".Krishi_Officer.K_Login"
+            android:exported="false" />
+        <activity
+            android:name=".Krishi_Officer.K_Register"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.A_Login"
+            android:exported="false" />
+        <activity
+            android:name=".Farmer.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Farmer.UserRegister"
+            android:exported="false"
+            android:label="@string/title_activity_user_register"
+            android:theme="@style/Theme.AgriProVisionElite" /> <!-- <activity -->
+        <!-- android:name=".MainActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

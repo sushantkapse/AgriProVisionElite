@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/top_background"
+            android:orientation="vertical"
+            tools:ignore="Orientation" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/all"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AgriProvision"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:id="@+id/Agri_title"
+
+                />
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Agri_title"
+                android:layout_marginTop="40dp"
+                android:id="@+id/card_add_crop"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="15dp"
+                android:padding="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:id="@+id/linear_layout"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+
+                    tools:ignore="Orientation" >
+
+
+                    <EditText
+                        android:id="@+id/editTextCropName"
+
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Crop Name"
+                        android:background="@drawable/custom_input_text_field_background"
+                        android:padding="12dp"
+                        android:layout_gravity="center"
+                        />
+
+
+
+                    <EditText
+                        android:id="@+id/editTextSowingDate"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editTextCropName"
+                        android:layout_marginTop="16dp"
+                        android:hint="Sowing Date"
+                        android:background="@drawable/custom_input_text_field_background"
+                        android:padding="12dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/editTextCropArea"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editTextSowingDate"
+                        android:layout_marginTop="16dp"
+
+                        android:background="@drawable/custom_input_text_field_background"
+                        android:padding="12dp"
+                        android:layout_gravity="center"
+                        android:hint=" Area"/>
+
+
+
+                    <Spinner
+                        android:id="@+id/spinnerExpenseType"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/editTextCropArea"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp" />
+
+                    <EditText
+                        android:id="@+id/spinnertext"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spinnerExpenseType"
+                        android:layout_marginTop="16dp"
+                        android:hint="Activities "
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_input_text_field_background"
+                        android:padding="12dp"
+                        tools:ignore="DuplicateIds" />
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spinnertext"
+                        android:layout_marginTop="16dp"
+                        android:hint="Amount "
+                        android:background="@drawable/custom_input_text_field_background"
+                        android:padding="12dp"
+                        android:layout_gravity="center"
+                        android:inputType="number|numberDecimal|textVisiblePassword"
+                        tools:ignore="DuplicateIds" />
+
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Todays Date"
+                        android:layout_gravity="center"
+                        android:paddingTop="20dp"
+                        android:layout_below="@id/amount"
+                        android:id="@+id/date_label"
+                        />
+
+                    <EditText
+                        android:id="@+id/pick_date_button"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_input_text_field_background"
+                        android:layout_below="@id/date_label"
+                        android:padding="12dp"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:hint="dd/mm/yyyy"
+                        android:layout_gravity="center"
+
+                        />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttons"
+                    android:layout_below="@+id/pick_date_button"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center" >
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_add_expenses"
+                        android:layout_below="@id/pick_date_button"
+                        android:layout_marginTop="10dp"
+
+                         android:backgroundTint="@color/orange"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                        android:text="Add Expneses "
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_a"
+                        android:layout_below="@id/btn_add_expenses"
+                        android:layout_marginTop="10dp"
+                        android:padding="12dp"
+                        android:text="view expenses"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+
+                        android:backgroundTint="@color/orange"
+
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/c_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/all"
+            android:layout_marginTop="16dp"
+            android:hint="Amount "
+            tools:ignore="DuplicateIds"
+            android:visibility="invisible"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

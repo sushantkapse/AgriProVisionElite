@@ -1,0 +1,68 @@
+<!-- row_crop.xml -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/row_crop_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="hello"
+        android:textColor="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/row_crop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="sushant"
+        android:textColor="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/row_crop_sowing_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="kk"
+        android:textColor="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/row_crop_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="how"
+        android:textColor="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/row_crop_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="are tou"
+        android:textColor="@color/purple_200"/>
+
+</LinearLayout>
+    <ImageView
+        android:id="@+id/menu_crop_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/menu_icon"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>

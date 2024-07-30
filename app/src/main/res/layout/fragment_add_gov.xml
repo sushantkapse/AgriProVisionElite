@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Krishi_Officer.fragments.AddGov">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:text="Goverment  Schemes"
+                android:shadowColor="@color/black"
+                android:textColorHighlight="@color/black"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Title"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tileId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/desId"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textMultiLine"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:hint="Eligibility Criteria">-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/kmobile"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="100dp"-->
+            <!--                    android:inputType="phone"-->
+            <!--                    android:layout_margin="10dp"-->
+            <!--                    android:ems="10" />-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Required Documents "
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/docId"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:inputType="textMultiLine"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/ImageId"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/submitId"
+                android:layout_marginTop="50dp"
+                android:padding="12dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

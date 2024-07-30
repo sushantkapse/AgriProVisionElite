@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comman.feedback"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Feedback Survey "
+        android:textColor="#A12C2C"
+        android:textSize="30dp"
+
+
+
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/f12" />
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Very Dissatisfied"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate us !!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"/>
+
+        <RatingBar
+            android:id="@+id/rbStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FB8C00"
+            android:numStars="5"
+            android:progressBackgroundTint="#ECEDE2"
+            android:progressTint="#FB8C00" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E3DEDE"
+        android:layout_marginBottom="20dp"
+        android:ems="5"
+        android:gravity="start|top"
+        android:hint="enter your name"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:padding="5dp"
+        android:id="@+id/name"
+        />
+
+    <EditText
+        android:id="@+id/feed"
+        android:layout_width="363dp"
+        android:layout_height="98dp"
+        android:background="#E3DEDE"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Share Your Experience"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="5dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="50dp"
+        android:background="#999E1D"
+        android:text="Send Feedback"
+        android:textColor="#F8F8F5" />
+
+
+</LinearLayout>
+
